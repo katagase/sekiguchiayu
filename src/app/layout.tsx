@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Wave from "@/components/Wave";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Header />
+        <Wave />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

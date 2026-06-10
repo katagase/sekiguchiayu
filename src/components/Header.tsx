@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { site, navItems } from "@/data/site";
@@ -19,9 +20,23 @@ export default function Header() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="text-lg font-semibold tracking-tight lowercase"
+          aria-label={site.brand}
+          className="flex items-center"
         >
-          {site.brand}
+          {site.logo ? (
+            <Image
+              src={site.logo}
+              alt={site.brand}
+              width={site.logoWidth}
+              height={site.logoHeight}
+              priority
+              className="h-9 w-auto sm:h-10"
+            />
+          ) : (
+            <span className="text-lg font-semibold tracking-tight lowercase">
+              {site.brand}
+            </span>
+          )}
         </Link>
 
         {/* PCナビ */}
@@ -32,9 +47,9 @@ export default function Header() {
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noopener noreferrer" : undefined}
-              className={`text-[11px] tracking-[0.18em] transition-colors hover:text-foreground ${
+              className={`text-[11px] tracking-[0.18em] transition-colors hover:text-turquoise ${
                 !item.external && isActive(item.href)
-                  ? "text-foreground"
+                  ? "text-turquoise"
                   : "text-muted"
               }`}
             >
@@ -85,7 +100,11 @@ export default function Header() {
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
                 onClick={() => setOpen(false)}
-                className="block py-3 text-xs tracking-[0.18em] text-muted"
+                className={`block py-3 text-xs tracking-[0.18em] ${
+                  !item.external && isActive(item.href)
+                    ? "text-turquoise"
+                    : "text-muted"
+                }`}
               >
                 {item.label}
               </Link>

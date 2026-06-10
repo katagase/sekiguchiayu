@@ -5,6 +5,9 @@
   --foreground: #141414;
   --muted: #8a8a8a;
   --line: #ebebeb;
+  /* ブランドカラー（ターコイズブルー） */
+  --turquoise: #66c2d4;
+  --turquoise-dark: #4aa9bc;
 }
 
 @theme inline {
@@ -12,6 +15,8 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-turquoise: var(--turquoise);
+  --color-turquoise-dark: var(--turquoise-dark);
   --font-sans: var(--font-geist-sans), var(--font-jp), ui-sans-serif, system-ui,
     "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
 }
