@@ -5,7 +5,8 @@
       "Bash(npm -v)",
       "Bash(git --version)",
       "Bash(npx -v)",
-      "Bash(npx --yes create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --no-git)"
+      "Bash(npx --yes create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --no-git)",
+      "Bash(grep -vE '^\\\\.$|^\\\\.\\\\.$|node_modules|\\\\.git$')"
     ]
   }
 }

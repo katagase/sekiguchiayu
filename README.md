@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# sekiguchiayu — Portfolio
 
-## Getting Started
+関口あゆ ポートフォリオサイト。Next.js（App Router）+ TypeScript + Tailwind CSS で構築。
 
-First, run the development server:
+## ローカルで動かす
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install      # 初回のみ
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+本番ビルドの確認:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 内容の編集場所
 
-## Learn More
+| 編集したいもの | ファイル |
+| --- | --- |
+| 名前・SNS・連絡先・ナビ | `src/data/site.ts` |
+| 作品（追加・並び替え・サムネ指定） | `src/data/works.ts` |
+| 作品のサムネ画像 | `public/works/`（`public/works/README.md` 参照） |
+| ABOUT（プロフィール本文） | `src/app/about/page.tsx` |
+| CLIENT（取引先リスト） | `src/app/client/page.tsx` |
+| CONTACT | `src/app/contact/page.tsx` |
 
-To learn more about Next.js, take a look at the following resources:
+## ページ構成
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `/` … トップ（作品グリッド・新しい順）
+- `/about` … ABOUT
+- `/client` … CLIENT
+- `/work` … WORK LIST（年別一覧）
+- `/work/[slug]` … 作品詳細
+- `/contact` … CONTACT
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Vercel へのデプロイ
 
-## Deploy on Vercel
+1. このフォルダを GitHub（または GitLab）にプッシュ
+2. [vercel.com](https://vercel.com) で「New Project」→ リポジトリを選択
+3. フレームワークは自動で **Next.js** と認識されます。そのまま **Deploy**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ビルドコマンド等は Vercel が自動設定するため、追加設定は不要です。
