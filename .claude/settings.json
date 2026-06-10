@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rooolou.com)",
+      "Bash(npm -v)",
+      "Bash(git --version)",
+      "Bash(npx -v)",
+      "Bash(npx --yes create-next-app@latest . --ts --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack --use-npm --no-git)"
+    ]
+  }
+}
