@@ -52,6 +52,20 @@ export interface Work {
  */
 export const works: Work[] = [
   {
+    slug: "kotobuki-jiu-jitsu",
+    title: "KOTOBUKI JIU-JITSU",
+    client: "KOTOBUKI JIU-JITSU",
+    category: "Logo Design",
+    year: 2026,
+    month: 6,
+    thumbnail: "/works/are4ou_01_kotobuki.webp",
+    description: [
+      "柔術ブランド「KOTOBUKI JIU-JITSU」のロゴデザイン。",
+      "「寿」の筆文字を主役に、力強さと縁起の良さを表現しました。",
+    ],
+    tags: ["Logo", "Branding", "Calligraphy"],
+  },
+  {
     slug: "brand-logo",
     title: "Brand Logo Design",
     client: "Sample Inc.",
