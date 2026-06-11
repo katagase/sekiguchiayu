@@ -23,6 +23,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* スクロールバーの有無でページ間の中央位置がズレるのを防ぐ（常に領域を確保） */
+  scrollbar-gutter: stable;
 }
 
 body {

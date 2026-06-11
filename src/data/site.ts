@@ -38,6 +38,9 @@ export const site = {
   /** 連絡先メールアドレス */
   email: "contact@example.com",
 
+  /** お問い合わせ先URL（CONTACTはここ＝KTGSの問い合わせフォームへ飛ばす） */
+  contactUrl: "https://ktgs.llc/contact",
+
   /** SNS・外部リンク */
   social: {
     instagram: "https://www.instagram.com/", // ← 実際のアカウントURLに変更
@@ -52,9 +55,10 @@ export const site = {
 /** ヘッダーのナビゲーション項目 */
 export const nav: NavItem[] = [
   { label: "ABOUT", href: "/about" },
+  { label: "SERVICE", href: "/service" },
   { label: "CLIENT", href: "/client" },
   { label: "WORK LIST", href: "/work" },
-  { label: "CONTACT", href: "/contact" },
+  { label: "CONTACT", href: site.contactUrl, external: true },
   // STORE は site.social.store にURLを入れると自動で追加されます（下のロジック参照）
 ];
 

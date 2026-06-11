@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     template: `%s | ${site.brand}`,
   },
   description: site.description,
+  // サイト全体を検索エンジンに登録させない（全ページに noindex, nofollow が付く）
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     title: site.title,
     description: site.description,
