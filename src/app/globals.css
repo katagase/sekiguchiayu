@@ -66,3 +66,25 @@ a {
   --line: rgba(255, 255, 255, 0.5); /* 白い罫線で水面らしく */
   background-color: var(--turquoise);
 }
+
+/* 波を横へゆっくり流す（2枚並べて -50% でシームレスにループ） */
+@keyframes wave-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-wave-drift {
+  animation: wave-drift 14s linear infinite;
+  will-change: transform;
+}
+
+/* 「視差効果を減らす」設定の人には動かさない */
+@media (prefers-reduced-motion: reduce) {
+  .animate-wave-drift {
+    animation: none;
+  }
+}
