@@ -4,12 +4,13 @@
 
 ## 手順
 
-1. 画像ファイルをこのフォルダに入れる（例: `brand-logo.jpg`）
-   - 推奨フォーマット: `.jpg` / `.png` / `.webp`
-   - 推奨サイズ: 幅 1200px 程度（軽くしたい場合は `.webp`）
+1. 画像ファイルをこのフォルダに入れる（例: `brand-logo.webp`）
+   - **推奨サイズ: 1200 × 1200px（正方形 1:1）** ← 全作品で統一
+   - **推奨フォーマット: `.webp`**（軽くて高画質）。写真は `.jpg`、透過が必要なら `.png`
+   - グリッドは正方形で表示されます（正方形以外は中央でトリミングされます）
 2. `src/data/works.ts` の該当作品に `thumbnail` を設定する
    ```ts
-   thumbnail: "/works/brand-logo.jpg",
+   thumbnail: "/works/brand-logo.webp",
    ```
    ※ パスは `/works/` から始めます（`public` は書きません）
 

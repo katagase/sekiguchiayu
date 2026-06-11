@@ -36,14 +36,9 @@ function Placeholder({ work }: { work: Work }) {
 }
 
 export default function WorkCard({ work }: { work: Work }) {
-  const ratio = work.aspectRatio ?? 4 / 3;
-
   const inner = (
-    <div className="group mb-7 block break-inside-avoid">
-      <div
-        className="relative w-full overflow-hidden rounded-sm bg-zinc-100"
-        style={{ aspectRatio: String(ratio) }}
-      >
+    <div className="group block">
+      <div className="relative aspect-square w-full overflow-hidden rounded-sm bg-zinc-100">
         {work.thumbnail ? (
           <Image
             src={work.thumbnail}

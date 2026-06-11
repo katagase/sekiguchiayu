@@ -34,8 +34,6 @@ export default async function WorkDetailPage({
   const work = getWorkBySlug(slug);
   if (!work) notFound();
 
-  const ratio = work.aspectRatio ?? 4 / 3;
-
   return (
     <article className="fade-up mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-20">
       <Link
@@ -46,10 +44,7 @@ export default async function WorkDetailPage({
       </Link>
 
       {/* メインビジュアル */}
-      <div
-        className="relative mt-6 w-full overflow-hidden rounded-sm bg-zinc-100"
-        style={{ aspectRatio: String(ratio) }}
-      >
+      <div className="relative mt-6 aspect-square w-full overflow-hidden rounded-sm bg-zinc-100">
         {work.thumbnail ? (
           <Image
             src={work.thumbnail}

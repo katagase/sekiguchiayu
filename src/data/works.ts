@@ -3,9 +3,12 @@
  * WORK LIST に自動で反映されます（新しい順に並びます）。
  *
  * サムネ画像の入れ方:
- *   1. 画像を public/works/ に置く（例: public/works/logo-brand.jpg）
- *   2. その作品の thumbnail に "/works/logo-brand.jpg" を設定する
+ *   1. 画像を public/works/ に置く（例: public/works/logo-brand.webp）
+ *   2. その作品の thumbnail に "/works/logo-brand.webp" を設定する
  *   thumbnail を空のままにすると、仮のプレースホルダーが表示されます。
+ *
+ * 推奨サムネ: 正方形 1:1 / 1200×1200px / WebP（透過が要る作品はPNG）。
+ *   グリッドは正方形で統一表示されます（はみ出しは中央トリミング）。
  */
 
 export type WorkCategory =
@@ -31,13 +34,11 @@ export interface Work {
   year: number;
   /** 制作月（1〜12） */
   month: number;
-  /** サムネ画像のパス（任意・例 "/works/xxx.jpg"）。未設定ならプレースホルダー表示 */
+  /** サムネ画像のパス（任意・正方形推奨 "/works/xxx.webp"）。未設定ならプレースホルダー表示 */
   thumbnail?: string;
-  /** サムネの縦横比 = 横 / 縦。未設定なら 4/3。例: 正方形=1, 縦長=0.8, 横長=1.6 */
-  aspectRatio?: number;
   /** 詳細ページの説明文（任意・改行は配列で複数段落に） */
   description?: string[];
-  /** 詳細ページに並べる画像（任意・"/works/xxx-1.jpg" など） */
+  /** 詳細ページに並べる画像（任意・"/works/xxx-1.webp" など。こちらは元の縦横比で表示） */
   images?: string[];
   /** 制作で担当した役割・技術タグ（任意） */
   tags?: string[];
@@ -57,7 +58,6 @@ export const works: Work[] = [
     category: "Logo Design",
     year: 2026,
     month: 4,
-    aspectRatio: 1,
     description: [
       "ブランドの世界観を一目で伝えるロゴマークを制作しました。",
       "シンボルとロゴタイプの組み合わせで、媒体を問わず展開できる設計です。",
@@ -71,7 +71,6 @@ export const works: Work[] = [
     category: "Goods Design",
     year: 2026,
     month: 2,
-    aspectRatio: 0.8,
     description: ["商品パッケージのデザイン。店頭で映えるビジュアルを目指しました。"],
     tags: ["Package", "Goods"],
   },
@@ -81,7 +80,6 @@ export const works: Work[] = [
     category: "Graphic",
     year: 2025,
     month: 11,
-    aspectRatio: 0.75,
     description: ["展示会のメインビジュアル。タイポグラフィを主役にした構成です。"],
     tags: ["Graphic", "Typography"],
   },
@@ -91,7 +89,6 @@ export const works: Work[] = [
     category: "Illustration",
     year: 2025,
     month: 8,
-    aspectRatio: 1,
     description: ["シリーズもののイラストレーション作品。"],
     tags: ["Illustration"],
   },
@@ -102,7 +99,6 @@ export const works: Work[] = [
     category: "Design",
     year: 2025,
     month: 5,
-    aspectRatio: 1.6,
     description: ["コーポレートサイトのアートディレクションとデザイン。"],
     tags: ["Web", "Art Direction"],
   },
@@ -112,7 +108,6 @@ export const works: Work[] = [
     category: "Graphic",
     year: 2024,
     month: 12,
-    aspectRatio: 0.75,
     description: ["雑誌の特集ページのエディトリアルデザイン。"],
     tags: ["Editorial", "Graphic"],
   },
@@ -123,7 +118,6 @@ export const works: Work[] = [
     category: "Collaboration",
     year: 2024,
     month: 7,
-    aspectRatio: 1.33,
     description: ["コラボレーション企画のグッズ一式をデザインしました。"],
     tags: ["Goods", "Collaboration"],
   },
@@ -133,7 +127,6 @@ export const works: Work[] = [
     category: "Logo Design",
     year: 2024,
     month: 2,
-    aspectRatio: 1,
     description: ["店舗向けのシンプルなロゴマーク。"],
     tags: ["Logo"],
   },
@@ -143,7 +136,6 @@ export const works: Work[] = [
     category: "Artwork",
     year: 2023,
     month: 10,
-    aspectRatio: 0.8,
     description: ["個人制作のアートワーク。"],
     tags: ["Artwork"],
   },
