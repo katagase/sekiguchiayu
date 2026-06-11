@@ -81,10 +81,3 @@ a {
   animation: wave-drift 14s linear infinite;
   will-change: transform;
 }
-
-/* 「視差効果を減らす」設定の人には動かさない */
-@media (prefers-reduced-motion: reduce) {
-  .animate-wave-drift {
-    animation: none;
-  }
-}
