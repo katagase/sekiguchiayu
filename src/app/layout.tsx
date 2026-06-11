@@ -19,6 +19,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  // OG画像などの絶対URLの基準（本番ドメイン）
+  metadataBase: new URL("https://sekiguchiayu.ktgs.llc"),
   title: {
     default: site.title,
     template: `%s | ${site.brand}`,
@@ -34,6 +36,11 @@ export const metadata: Metadata = {
     description: site.description,
     type: "website",
     locale: "ja_JP",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.title,
+    description: site.description,
   },
 };
 
