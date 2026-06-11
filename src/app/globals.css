@@ -17,11 +17,8 @@
   --color-line: var(--line);
   --color-turquoise: var(--turquoise);
   --color-turquoise-dark: var(--turquoise-dark);
-  /* 欧文: Neue Haas Grotesk（未読込環境は Helvetica/Arial に自動フォールバック）
-     和文: 游ゴシック（Win/Mac標準）。ブラウザが文字ごとに使い分けます。 */
-  --font-sans: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk",
-    "neue-haas-grotesk-display", "Helvetica Neue", Helvetica, Arial,
-    "游ゴシック体", "Yu Gothic Medium", "Yu Gothic", YuGothic, "游ゴシック",
+  /* 欧文: Montserrat / 和文: Noto Sans JP（ブラウザが文字ごとに使い分け） */
+  --font-sans: var(--font-latin), var(--font-jp), ui-sans-serif, system-ui,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
