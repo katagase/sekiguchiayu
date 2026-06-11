@@ -38,7 +38,7 @@ function Placeholder({ work }: { work: Work }) {
 export default function WorkCard({ work }: { work: Work }) {
   const inner = (
     <div className="group block">
-      <div className="relative aspect-square w-full overflow-hidden rounded-sm bg-zinc-100">
+      <div className="relative aspect-square w-full overflow-hidden rounded-md bg-white shadow-[0_8px_24px_rgba(0,0,0,0.10)] transition-shadow duration-300 group-hover:shadow-[0_12px_30px_rgba(0,0,0,0.16)]">
         {work.thumbnail ? (
           <Image
             src={work.thumbnail}

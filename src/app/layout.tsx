@@ -45,8 +45,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Header />
         <Wave />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <div className="content-turquoise flex flex-1 flex-col">
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

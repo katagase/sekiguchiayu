@@ -53,3 +53,16 @@ a {
 .fade-up {
   animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
+/*
+ * ターコイズのコンテンツ面（メニュー以外＝波から下）。
+ * 配下の text-foreground / text-muted / border-line / bg-background は
+ * ここで上書きした値に切り替わり、ターコイズ上でも読みやすくなります。
+ */
+.content-turquoise {
+  --background: #66c2d4;
+  --foreground: #0f3942; /* 濃いティール（見出し・本文） */
+  --muted: #275a64; /* 中間ティール（日付・補足） */
+  --line: rgba(255, 255, 255, 0.5); /* 白い罫線で水面らしく */
+  background-color: var(--turquoise);
+}
