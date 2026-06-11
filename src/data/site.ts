@@ -14,16 +14,14 @@ export const site = {
   brand: "sekiguchiayu",
 
   /**
-   * ヘッダーのロゴ画像パス。"" にするとテキスト(brand)表示になります。
-   * 本物の名刺画像に差し替えるとき:
-   *   1. 画像を public/ に置く（例: public/logo.png）
-   *   2. ここを "/logo.png" に変更
-   * 現在は仮の鮎モザイクSVG（public/ayu-logo.svg）を表示しています。
+   * ヘッダーのロゴ画像パス（public/ からの絶対パス）。"" にするとテキスト(brand)表示。
+   * 現在は本物の鮎ロゴ public/logo.svg（900×300）を表示しています。
+   * 差し替える場合はファイルを public/ に置き、ここのパスと下のサイズを更新。
    */
-  logo: "/ayu-logo.svg",
+  logo: "/logo.svg",
   /** ロゴ画像の元サイズ（縦横比の計算用。SVGのviewBoxに合わせています） */
-  logoWidth: 210,
-  logoHeight: 92,
+  logoWidth: 900,
+  logoHeight: 300,
   /** 氏名（ローマ字） */
   name: "Sekiguchi Ayu",
   /** 氏名（日本語） */
