@@ -24,16 +24,16 @@ export const site = {
   logoHeight: 300,
   /** 氏名（ローマ字） */
   name: "Sekiguchi Ayu",
-  /** 氏名（日本語） */
-  nameJa: "関口あゆ",
+  /** 氏名（日本語／カナ） */
+  nameJa: "セキグチアユ",
   /** 肩書き */
-  role: "Designer / Creator",
+  role: "Designer / Sports Instructor",
 
   /** <title> やSNSシェア時に使われるサイトタイトル */
   title: "sekiguchiayu — Portfolio",
   /** サイトの説明文（meta description） */
   description:
-    "関口あゆのポートフォリオサイト。ロゴ・グッズ・グラフィックなどのデザイン作品を掲載しています。",
+    "セキグチアユのポートフォリオサイト。ロゴ・グッズ・グラフィックなどのデザイン作品を掲載しています。",
 
   /** 連絡先メールアドレス */
   email: "contact@example.com",
