@@ -45,7 +45,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Header />
         <Wave />
-        <div className="content-turquoise flex flex-1 flex-col">
+        {/* -mt-px: 波の下端の継ぎ目(サブピクセルの白線)を1px重ねて隠す */}
+        <div className="content-turquoise -mt-px flex flex-1 flex-col">
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
