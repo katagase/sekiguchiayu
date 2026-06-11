@@ -20,9 +20,14 @@ const notoSansJP = Noto_Sans_JP({
   preload: false,
 });
 
+// OG画像などの絶対URLの基準。Vercelが提供する到達可能な本番ドメインを使う。
+// 独自ドメイン(sekiguchiayu.ktgs.llc)を接続すると自動でそのドメインになります。
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
+
 export const metadata: Metadata = {
-  // OG画像などの絶対URLの基準（本番ドメイン）
-  metadataBase: new URL("https://sekiguchiayu.ktgs.llc"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: site.title,
     template: `%s | ${site.brand}`,
