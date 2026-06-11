@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { site } from "@/data/site";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "SERVICE",
@@ -182,16 +182,14 @@ export default function ServicePage() {
         長年の経験を活かし、お客様の事業や想いを理解したうえで、成果につながるデザインをご提案いたします。
       </p>
 
-      {/* CTA */}
+      {/* CTA（内部CONTACTページ経由でKTGSフォームへ案内） */}
       <div className="mt-12">
-        <a
-          href={site.contactUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-[#1d1d1d] shadow-[0_8px_24px_rgba(0,0,0,0.10)] transition-transform hover:-translate-y-0.5"
         >
           お問い合わせ →
-        </a>
+        </Link>
       </div>
     </section>
   );
