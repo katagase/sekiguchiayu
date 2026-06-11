@@ -58,7 +58,7 @@ export const nav: NavItem[] = [
   { label: "SERVICE", href: "/service" },
   { label: "CLIENT", href: "/client" },
   { label: "WORK LIST", href: "/work" },
-  { label: "CONTACT", href: site.contactUrl, external: true },
+  { label: "CONTACT", href: "/contact" },
   // STORE は site.social.store にURLを入れると自動で追加されます（下のロジック参照）
 ];
 
