@@ -10,8 +10,7 @@ export default function Wave() {
     >
       <svg
         viewBox="0 0 1440 120"
-        preserveAspectRatio="none"
-        className="block h-20 w-full sm:h-28 md:h-32"
+        className="block h-auto w-full"
       >
         {/* 名刺のような、ゆったり大きい一枚波（右上がりに優しく寄せる） */}
         <path
