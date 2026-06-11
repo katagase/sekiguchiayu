@@ -33,7 +33,7 @@ export const site = {
   title: "sekiguchiayu — Portfolio",
   /** サイトの説明文（meta description） */
   description:
-    "セキグチアユのポートフォリオサイト。ロゴ・グッズ・グラフィックなどのデザイン作品を掲載しています。",
+    "カタガセアユのポートフォリオサイト。ロゴ・グッズ・グラフィックなどのデザイン作品を掲載しています。",
 
   /** 連絡先メールアドレス */
   email: "contact@example.com",

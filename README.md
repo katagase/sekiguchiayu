@@ -1,6 +1,6 @@
 # sekiguchiayu — Portfolio
 
-関口あゆ ポートフォリオサイト。Next.js（App Router）+ TypeScript + Tailwind CSS で構築。
+カタガセアユ ポートフォリオサイト。Next.js（App Router）+ TypeScript + Tailwind CSS で構築。
 
 ## ローカルで動かす
 

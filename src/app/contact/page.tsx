@@ -12,7 +12,7 @@ export default function ContactPage() {
 
       <div className="mt-10 space-y-5 text-[15px] leading-8">
         <p>
-          デザインのご依頼・ご相談は、セキグチアユが創業メンバーとして参画する
+          デザインのご依頼・ご相談は、カタガセアユが創業メンバーとして参画する
           <span className="font-medium">ケーティージーエス合同会社</span>
           のお問い合わせフォームより承っております。
         </p>
