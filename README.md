@@ -1,4 +1,4 @@
-# sekiguchiayu — Portfolio
+# are4ou — Portfolio
 
 カタガセアユ ポートフォリオサイト。Next.js（App Router）+ TypeScript + Tailwind CSS で構築。
 

@@ -11,7 +11,7 @@ export interface NavItem {
 
 export const site = {
   /** ブランド名（ロゴ画像が無いときのテキスト表示・alt用） */
-  brand: "sekiguchiayu",
+  brand: "are4ou",
 
   /**
    * ヘッダーのロゴ画像パス（public/ からの絶対パス）。"" にするとテキスト(brand)表示。
@@ -30,7 +30,7 @@ export const site = {
   role: "デザイナー / インストラクター",
 
   /** <title> やSNSシェア時に使われるサイトタイトル */
-  title: "sekiguchiayu — Portfolio",
+  title: "are4ou — Portfolio",
   /** サイトの説明文（meta description） */
   description:
     "カタガセアユのポートフォリオサイト。ロゴ・グッズ・グラフィックなどのデザイン作品を掲載しています。",
@@ -49,7 +49,7 @@ export const site = {
   },
 
   /** フッターの著作権表記（年は自動で付きます） */
-  copyrightHolder: "sekiguchiayu",
+  copyrightHolder: "are4ou",
 } as const;
 
 /** ヘッダーのナビゲーション項目 */

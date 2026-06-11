@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
 // SNS等でリンクを貼ったときに出るカード画像（1200×630）
-export const alt = "sekiguchiayu — Portfolio";
+export const alt = "are4ou — Portfolio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default async function OgImage() {
             color: "#141414",
           }}
         >
-          sekiguchiayu
+          are4ou
         </div>
         <div
           style={{
