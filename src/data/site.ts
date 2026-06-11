@@ -23,11 +23,11 @@ export const site = {
   logoWidth: 900,
   logoHeight: 300,
   /** 氏名（ローマ字） */
-  name: "Sekiguchi Ayu",
+  name: "Katagase Ayu",
   /** 氏名（日本語／カナ） */
-  nameJa: "セキグチアユ",
+  nameJa: "カタガセアユ",
   /** 肩書き */
-  role: "Designer / Sports Instructor",
+  role: "デザイナー / インストラクター",
 
   /** <title> やSNSシェア時に使われるサイトタイトル */
   title: "sekiguchiayu — Portfolio",
