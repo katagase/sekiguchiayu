@@ -53,15 +53,15 @@ export interface Work {
 export const works: Work[] = [
   {
     slug: "kotobuki-jiu-jitsu",
-    title: "KOTOBUKI JIU-JITSU",
-    client: "KOTOBUKI JIU-JITSU",
+    title: "寿柔術 KOTOBUKI JIU-JITSU",
+    client: "ブラジリアン柔術道場 寿柔術",
     category: "Logo Design",
-    year: 2026,
+    year: 2024,
     month: 6,
     thumbnail: "/works/are4ou_01_kotobuki.webp",
     description: [
-      "柔術ブランド「KOTOBUKI JIU-JITSU」のロゴデザイン。",
-      "「寿」の筆文字を主役に、力強さと縁起の良さを表現しました。",
+      "ブラジリアン柔術道場「寿柔術」のロゴデザイン。",
+      "代表が謳う『ニンニン柔術』のエッセンスを加え、忍術を想起させるようなデザインに仕上げました。",
     ],
     tags: ["Logo", "Branding", "Calligraphy"],
   },
