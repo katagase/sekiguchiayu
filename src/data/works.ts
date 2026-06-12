@@ -168,7 +168,7 @@ export const works: Work[] = [
   },
   {
     slug: "omotesando-kick",
-    title: "原宿キック ロゴ",
+    title: "表参道キック ロゴ",
     client: "キックボクシングパーソナルジム",
     category: "LOGOTYPE & LOGOMARK",
     year: 2020,
