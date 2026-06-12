@@ -68,12 +68,12 @@ export default function ServicePage() {
   return (
     <section className="fade-up mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-20">
       <h1 className="text-xs tracking-[0.3em] text-muted">SERVICE</h1>
-      <p className="mt-3 text-2xl font-medium tracking-tight">
+      <p className="kerning mt-3 text-2xl font-medium tracking-tight">
         社外デザイン担当サービス
       </p>
 
       {/* リード */}
-      <div className="mt-8 space-y-1.5 text-lg leading-9 font-medium">
+      <div className="kerning mt-8 space-y-1.5 text-lg leading-9 font-medium">
         {scenarios.map((s) => (
           <p key={s}>{s}</p>
         ))}
@@ -171,7 +171,7 @@ export default function ServicePage() {
       <p className="mt-6 text-[15px] leading-8">単に見た目を整えるだけではなく、</p>
       <ul className="mt-4 space-y-1.5">
         {strengths.map((s) => (
-          <li key={s} className="text-xl font-medium tracking-tight">
+          <li key={s} className="kerning text-xl font-medium tracking-tight">
             「{s}」
           </li>
         ))}
@@ -182,7 +182,7 @@ export default function ServicePage() {
       </p>
 
       {/* スタンス */}
-      <p className="mt-12 text-xl font-medium leading-relaxed tracking-tight">
+      <p className="kerning mt-12 text-xl font-medium leading-relaxed tracking-tight">
         御社の想いを、
         <br className="sm:hidden" />
         かたちにするお手伝いをします。
