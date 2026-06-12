@@ -43,7 +43,7 @@ export const site = {
 
   /** SNS・外部リンク */
   social: {
-    instagram: "https://www.instagram.com/", // ← 実際のアカウントURLに変更
+    instagram: "", // 空ならフッターのアイコン・CONTACTのDMリンクを非表示
     x: "", // 任意。空なら非表示
     store: "", // STORE のURL。空ならナビに表示されません
   },

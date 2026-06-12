@@ -4,16 +4,17 @@ export const metadata: Metadata = {
   title: "CLIENT",
 };
 
-/* ▼ クライアント名のリスト。実際の取引先に書き換えてください。 */
+/* ▼ クライアント名のリスト（敬称略・新しい順）。個人依頼は非掲載。 */
 const clients: string[] = [
-  "Sample Inc.",
-  "Sample Foods",
-  "Sample Studio",
-  "Sample Records",
-  "Sample Gallery",
-  "Sample Apparel",
-  "Sample Cafe",
-  "Sample Publishing",
+  "J-BOX FITNESS",
+  "寿柔術",
+  "キッチンカウカウハウス",
+  "node-bee合同会社",
+  "brio kickboxing club",
+  "S.B.G.G Aspiration",
+  "BM INTEGRATION",
+  "株式会社A-KICK（原宿キック／表参道キック）",
+  "株式会社エルデシュ",
 ];
 
 export default function ClientPage() {
