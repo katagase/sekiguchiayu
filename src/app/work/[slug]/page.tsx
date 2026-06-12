@@ -106,9 +106,9 @@ export default async function WorkDetailPage({
                 src={src}
                 alt={`${work.title} ${i + 1}`}
                 width={1200}
-                height={900}
+                height={1200}
                 sizes="(max-width: 768px) 100vw, 768px"
-                className="h-auto w-full object-cover"
+                className="h-auto w-full object-contain"
               />
             </div>
           ))}
