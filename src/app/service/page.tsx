@@ -18,10 +18,9 @@ const scenarios = [
 /* お悩みリスト */
 const concerns = [
   "デザインを頼みたいが、専任担当者を雇うほどではない",
-  "その都度デザイナーを探すのが面倒",
-  "名刺やチラシの修正を気軽に頼みたい",
+  "名刺やチラシの作成・修正を気軽に頼みたい",
   "採用活動や営業活動で使う資料を整えたい",
-  "デザインの相談相手が欲しい",
+  "デザインの相談に乗って欲しい",
 ];
 
 /* 対応可能な制作物 */
@@ -81,13 +80,13 @@ export default function ServicePage() {
       </div>
       <div className="mt-6 space-y-5 text-[15px] leading-8">
         <p>
-          そんな時に、必要な都度デザイナーを探したり、見積りを取ったりするのは意外と手間がかかるものです。
+          そんな時に、その都度デザイナーを探したり、見積りを取ったりするのは意外と手間がかかるものです。
         </p>
         <p>
           当サービスでは、御社の「社外デザイン担当」として、月額制で継続的にデザイン業務をサポートします。
         </p>
         <p>
-          15年以上のデザイン経験を活かし、会社案内、パンフレット、チラシ、販促ツール、SNS画像など、日々発生する様々なデザイン業務に対応いたします。
+          15年以上のデザイン経験を活かし、名刺、会社案内、パンフレット、チラシ、販促ツール、SNS画像など、様々なデザイン業務のお手伝いをいたします。
         </p>
       </div>
 
@@ -179,11 +178,18 @@ export default function ServicePage() {
       </ul>
       <p className="mt-4 text-[15px] leading-8">を大切にしています。</p>
       <p className="mt-5 text-[15px] leading-8">
-        長年の経験を活かし、お客様の事業や想いを理解したうえで、成果につながるデザインをご提案いたします。
+        長年の経験を活かし、お客様の事業や想いを理解したうえでデザインをご提案いたします。一緒に考えていきましょう。
+      </p>
+
+      {/* スタンス */}
+      <p className="mt-12 text-xl font-medium leading-relaxed tracking-tight">
+        御社の想いを、
+        <br className="sm:hidden" />
+        かたちにするお手伝いをします。
       </p>
 
       {/* CTA（内部CONTACTページ経由でKTGSフォームへ案内） */}
-      <div className="mt-12">
+      <div className="mt-8">
         <Link
           href="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-[#1d1d1d] shadow-[0_8px_24px_rgba(0,0,0,0.10)] transition-transform hover:-translate-y-0.5"
