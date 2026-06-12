@@ -41,6 +41,20 @@ a {
   text-decoration: none;
 }
 
+/*
+ * 見出し系の文字詰め。
+ * "palt" = 和文プロポーショナルメトリクス（約物・カナのアキを詰める）、
+ * "kern" = 欧文ペアカーニング。見出しの字面がぐっと締まります。
+ * 大きい和文コピー（<p>等）にも効かせたい場合は class="kerning" を付与。
+ */
+h1,
+h2,
+h3,
+h4,
+.kerning {
+  font-feature-settings: "palt" 1, "kern" 1;
+}
+
 /* Subtle entrance animation for page content */
 @keyframes fade-up {
   from {
